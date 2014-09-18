@@ -784,7 +784,7 @@ hljs.initHighlightingOnLoad();
   <div class="slides">
 
 <section data-state="section" data-transition="linear" data-transition-speed="default">
-<h1>Deploying the DINA Web system</h1><p>markus.skyttner@nrm.se<br/>Aug 28, 2014</p>
+<h1>Deploying the DINA Web system</h1><p>markus.skyttner@nrm.se<br/>Sep 16, 2014</p>
 
 <div class="slideContent" >
 <p>How can we package <strong>DINA Web</strong> to simplify deployments on the Internet and/or on Intranets?</p>
@@ -815,10 +815,10 @@ hljs.initHighlightingOnLoad();
 <h3>Layers of the technology stack</h3>
 <div class="slideContent" >
 <ol>
-<li>The <strong>source code</strong> itself (for developers, DIYs)</li>
-<li>API documentation, <strong>tutorials</strong> (doesn&#39;t require knowledge of the specific language)</li>
-<li>System integration packages with <strong>scripts/installers</strong> (can be used by sysadmins)</li>
-<li>Bare bones <strong>reference implementation online</strong> of component at public URL (can be used by testers)</li>
+<li>The <strong>source code</strong> itself (for developers, DIYs) implementing the information model (step 0)</li>
+<li>API documentation, <strong>tutorials</strong> (programming language agnostic)</li>
+<li>System integration packages with <strong>scripts/installers</strong> (for sysadmins)</li>
+<li>Bare bones <strong>reference implementation online</strong> of component at public URL (for testers)</li>
 <li><strong>VMs</strong> - ISOs or Virtual Disk Images generated from assembly/build scripts (all deps are there)</li>
 <li>On-line publicly availabe <strong>web site</strong> (support, maintenance, backups, everything operational)</li>
 </ol>
@@ -868,13 +868,13 @@ hljs.initHighlightingOnLoad();
 <h3>Tools</h3>
 
 <ul>
-<li>Docker, Vagrant</li>
+<li>Vagrant, Docker</li>
 </ul>
 
 <h3>Infrastructures</h3>
 
 <ul>
-<li>Museum intranet or extranet or Internetworked server</li>
+<li>Museum intranet or extranet or Internetworked server with &ldquo;hypervisor&rdquo;</li>
 <li>Linode, Amazon, Digital Ocean or other 3rd party cloud server<br/></li>
 </ul>
 
